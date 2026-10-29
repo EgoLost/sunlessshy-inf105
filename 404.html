@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Sunlessshy</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/404.css">
+    <script src="/theme.js" defer></script>
+    <script src="/404.js" defer></script>
+</head>
+
+<body class="container">
+
+    <header class="border">
+        <h1 class="error_title">Error 4 <span class="slow_blink offline">0</span> 4</h1>
+
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+            <span class="theme-icon" aria-hidden="true">✸</span>
+        </button>
+    </header>
+
+    <main class="error-main">
+        <article class="border error-article">
+            <p class="error_description">The page you're trying to access could not be found.<br>
+                It may have been moved, deleted, or the address may have been entered incorrectly.<br>
+                You can return to the main page or stay here and test your skills with a little neural warm-up.<br>
+                <b>[ SYSTEM STATUS: AWAITING USER ACTION ]</b></p>
+            <div class="error-actions">
+                <a href="/" class="error-button" title="return to main page">
+                    [ RETURN TO MAIN SYSTEM ]
+                </a>
+
+                <button type="button" id="start-game" class="error-button" title="start warm-up mini game">
+                    [ INITIATE NEURAL WARM-UP ]
+                </button>
+            </div>
+            
+            <!-- section below is hidden until button is pressed --> 
+
+            <section id="typing-game" class="typing-game" aria-label="Neural Warm-Up game" hidden>
+                <div id="secret-popup" class="secret-popup" hidden>
+                    <p id="secret-popup-text" class="secret-popup-text"></p>
+                    <img id="secret-popup-image" class="secret-popup-image" src="" alt="">
+                </div>
+                <div class="game-head">
+                    <h2>NEURAL WARM-UP</h2>
+                    <button type="button" id="close-game" class="game-small-exit-button" title="close warm-up game">[ EXIT ]</button>
+                </div>
+                <div class="game-stats">
+                    <span>SCORE: <strong id="game-score">0000</strong></span>
+                    <span>LIVES: <strong id="game-lives">♥ ♥ ♥ ♥</strong></span>
+                </div>
+                <p class="game-instructions">
+                    Type the grey word in order.
+                    Each incorrect key costs one life and generates a new word.
+                    Complete words to earn points.
+                    You have four lives.
+                </p>
+                <div id="game-word" class="game-word" aria-label="Current word"></div>
+                <label class="game-input-label" for="game-input">TYPE HERE / CLICK TO FOCUS</label>
+                <input id="game-input" class="game-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" inputmode="text" disabled>
+                <p id="game-message" class="game-message" role="status" aria-live="polite">PRESS START TO INITIALIZE</p>
+                <button type="button" id="restart-game" class="error-button" title="restart mini game" hidden>[ RESTART PROTOCOL ]</button>
+            </section>
+            
+            <!-- description in case of JS is not working or browser run in text mode -->
+
+            <noscript>
+                <p>
+                    Neural Warm-Up requires JavaScript to run.
+                    You can still return to the main page using the link above.
+                </p>
+            </noscript>
+        </article>
+    </main>
+
+</body>
+</html>

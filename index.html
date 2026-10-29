@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunlessshy</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/theme.js" defer></script>
+</head>
+
+<body class="container">
+
+    <header class="border">
+        <h1>Sunlessshy</h1>
+
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+            <span class="theme-icon" aria-hidden="true">✸</span>
+        </button>
+    </header>
+
+    <nav class="border">
+        <a href="/index.html" data-text="home">[0] Home</a>
+        <a href="/About.html" data-text="about">[1] About me</a>
+        <a href="/Skills.html" data-text="skills">[2] Skills</a>
+        <a href="/Projects.html" data-text="projects">[3] Projects</a>
+        <a href="/Contacts.html" data-text="contacts">[4] Contacts</a>
+    </nav>
+
+    <main>
+
+            <article class="border dossier">
+
+        <div class="dossier-header">
+            <h2>PERSONAL DOSSIER</h2>
+            <p class="dossier-subtitle">USER PROFILE // [ ACCESS DENIED — SECURITY LEVEL 05 ]</p>
+        </div>
+
+        <div class="dossier-content">
+
+            <div class="dossier-photo-block">
+                <div class="photo-frame">
+                    <img src="./images/my_photo.jpg" alt="Photo of me(will add later)" class="dossier-photo">
+                </div>
+                <p class="photo-label">IDENTIFICATION PHOTO</p>
+            </div>
+
+            <div class="dossier-info">
+                <div class="dossier-grid">
+                    <div><span class="info-label">NAME:</span> RESTRICTED</div>
+                    <div><span class="info-label">AGE:</span> ##</div>
+                    <div><span class="info-label">LOCATION:</span> RESTRICTED</div>
+                    <div><span class="info-label">STATUS:</span> RESTRICTED</div>
+                    <div><span class="info-label">ROLE:</span> RESTRICTED</div>
+                    <div><span class="info-label">SPECIALTY:</span> RESTRICTED</div>
+                </div>
+
+                <div class="dossier-description">
+                    <p>
+                        The requested personal information is classified.
+                        Your current clearance level is insufficient to access this subject's records.
+                    </p>
+
+                    <p>
+                        Unauthorized access attempt detected. 
+                        Identity verification failed. 
+                        Further attempts to retrieve classified information may result in permanent access restrictions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+        <aside class="border">
+            <button class="status-toggle" id="status-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="status-content">SYSTEM STATUS
+                    <a href="#nav"><span id="status-arrow">▲</span></a>
+            </button>
+            <div id="status-content" class="status-content">
+                    <div class="status-content-inner">
+                        <div class="status-title">
+                            <h2 class="system-title" data-text="systemTitle">
+                                SYSTEM
+                            </h2>
+                            <h2 class="status-title-text" data-text="statusTitle">
+                                STATUS
+                            </h2>
+                        </div>
+                        <div class="status-list">
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="timeLabel">
+                                TIME:
+                            </span>
+                            <span id="time">
+                                00:00:00
+                            </span>
+                        </div>
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="dateLabel">
+                                DATE:
+                            </span>
+                            <span id="date">
+                                01.01.1998
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="weatherLabel">
+                                WEATHER:
+                            </span>
+                            <span id="weather">
+                                ...
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="visitsLabel">
+                                VISITS:
+                            </span>
+                            <span id="visits">
+                                0
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="uptimeLabel">
+                                UPTIME:
+                            </span>
+                            <span id="uptime">
+                                00:00:00
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="displayLabel">
+                                DISPLAY:
+                            </span>
+                            <span id="display">
+                                ...
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="cursorLabel">
+                                CURSOR:
+                            </span>
+                            <span id="cursor">
+                                0 / 0
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="languageLabel">
+                                LANGUAGE:
+                            </span>
+
+                            <select id="language-select">
+                                <option value="en">
+                                    English
+                                </option>
+                                <option value="ru">
+                                    Русский
+                                </option>
+                                <option value="no">
+                                    Norsk
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="BUILDLabel">
+                                BUILD:
+                            </span>
+                            <span>
+                                0.5.8
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="accessCodeLabel">
+                                ACCESS CODE:
+                            </span>
+                            <span id="access-code">
+                                ...
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="networkStatusLabel">
+                                STATUS:
+                            </span>
+                            <span id="network-status" class="status-blink online">
+                                ONLINE
+                            </span>
+                        </div>
+
+
+                        <div class="status-row">
+                            <span class="status-label" data-text="systemMessageLabel">
+                                SYS:
+                            </span>
+                            <span id="system-message">
+                                ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="border">
+        <p data-text="footerText">
+            created by luck and with hope
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
